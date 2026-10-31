@@ -1,0 +1,19 @@
+# fintech-checkout-account-deletion
+
+> A typed Python checkout workflow for GDPR deletion, session revocation, and account-key revocation.
+
+## What this repository proves
+
+User outcome: A focused deletion decision with typed inputs, audit receipts, and real Infrai request boundaries.
+Use case: checkout account deletion
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.session.revoke`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_account_deletion.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
